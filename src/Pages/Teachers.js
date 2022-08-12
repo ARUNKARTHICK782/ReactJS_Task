@@ -16,7 +16,7 @@ function RenderRow(props){
 function Teachers(){
     const[teachers,setTeachers] = useState(staff);
     return (
-       <Table striped bordered hover>
+       <Table striped bordered hover variant="dark">
         <thead>
             <tr>
                 <th>Name</th>

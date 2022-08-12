@@ -20,9 +20,11 @@ function ShowOnClick(props){
 function HomePage(){
     const [role,setRole] = useState(0);
     return (
-        <div style={{ margin: "auto"}}>
-            <Button  variant="secondary" onClick={()=>setRole(0)}>Show Students</Button>
+        <div style={{padding:"30px"}}>
+            <Button variant="secondary" onClick={()=>setRole(0)}>Show Students</Button>
+            &nbsp;
             <Button variant = "secondary" onClick={()=>setRole(1)}>Show Teachers</Button>
+            <div style={{height:"10px"}}></div>
             <ShowOnClick person={role}/>
         </div>
     )
